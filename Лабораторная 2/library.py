@@ -1,7 +1,3 @@
-
-
-# TODO написать класс Library
-
 BOOKS_DATABASE = [
     {
         "id": 1,
