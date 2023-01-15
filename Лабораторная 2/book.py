@@ -12,7 +12,6 @@ BOOKS_DATABASE = [
 ]
 
 
-
 class Book:
 
     def __init__(self, id_: int, name: str, pages: int):
@@ -25,7 +24,6 @@ class Book:
 
     def __repr__(self) -> str:
         return f'Book(id_={self.id_!r}, name={self.name!r}, pages={self.pages!r})'
-
 
 
 if __name__ == '__main__':
