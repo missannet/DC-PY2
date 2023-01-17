@@ -24,13 +24,13 @@ class Book:
         return f'Book(id_={self.id_!r}, name={self.name!r}, pages={self.pages!r})'
 
 class Library:
-    def __init__(self, books = []):
+    def __init__(self, books = None):
         self.books = books
 
-    def get_next_book_id(self):
+    def get_next_book_id(self) -> int:
         return len(self.books)+1
 
-    def get_index_by_book_id(self, id_):
+    def get_index_by_book_id(self, id_) -> int:
         for index, book in enumerate(self.books):
             if book.id_ == id_:
                 return self.books.index(book)
